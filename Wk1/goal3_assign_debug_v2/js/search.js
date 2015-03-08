@@ -1,3 +1,9 @@
+/*
+name: Alana Keay
+date: March 08 2015
+assignment: Week #1 ANALYZE Buggy Search v1
+*/
+
 // Create privatized scope using a self-executing function
 (function() {
 
@@ -8,7 +14,7 @@
 		;
 
 	// Validates search query
-	var validate = function (query) {
+	var validqte = function (query) {
 
 		// Trim whitespace from start and end of search query
 		while (query.charAt(0) = " ") {
@@ -119,7 +125,7 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function () {
 		var query = searchInput.value;
-		validate(query);
+		validqte(query);
 
 		// return false is needed for most events - this will be reviewed in upcoming course material
 		// THE LINE DIRECTLY BELOW IS CORRECT
