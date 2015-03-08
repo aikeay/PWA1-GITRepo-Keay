@@ -17,13 +17,13 @@ assignment: Week #1 ANALYZE Buggy Search v1
 	var validqte = function (query) {
 
 		// Trim whitespace from start and end of search query
-		while (query.charAt(0) = " ") {
+		while (query.charAt() = " ") {
 			query = query.substring(1, query.length);
 		}
-		;
+
 		while (query.charAt(query.length - 1) === "") {
 			query = query.substring(0, query.length - 1);
-			;
+
 
 			// Check search length, must have 3 characters
 			if (query.length < 3) {
@@ -33,11 +33,11 @@ assignment: Week #1 ANALYZE Buggy Search v1
 				searchInput.focus();
 				return;
 			}
-			;
+
 
 			search(query);
 		}
-		;
+
 
 		// Finds search matches
 		var search = function (query) {
@@ -67,11 +67,11 @@ assignment: Week #1 ANALYZE Buggy Search v1
 					if (compare !== -1) {
 						results.push(db[i]);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		};
 
 		results.sort();
@@ -82,7 +82,7 @@ assignment: Week #1 ANALYZE Buggy Search v1
 		} else {
 			showMatches(results);
 		}
-		;
+
 	};
 
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
@@ -117,7 +117,7 @@ assignment: Week #1 ANALYZE Buggy Search v1
 			// make the video link - THE NEXT LINE IS CORRECT.
 			html += '<p><a href=' + url + '>' + title + '</a></p>';
 		}
-		;
+
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
 	};
 
