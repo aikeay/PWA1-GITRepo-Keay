@@ -35,7 +35,14 @@ Assignment: Week#1: ANALYZE Duel#1
 
     };
 
+    function winnerCheck(){
+        console.log("in winnerCheck FN");
 
+        var result="no winner";
+
+        return result;
+
+    };
 
     /****** The program gets started below ******/
     console.log("program starts")
