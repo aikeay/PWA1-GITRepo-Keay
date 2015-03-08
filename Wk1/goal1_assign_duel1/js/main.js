@@ -24,4 +24,21 @@ Assignment: Week#1: ANALYZE Duel#1
     var playerOneHealth= 100;
     var playerTwoHealth= 100;
 
-   })();
+    //round
+    var round= 0;
+
+    function fight(){
+        console.log("in the fight function")
+
+        alert(playerOneName+":"+playerOneHealth+" *START* "+playerTwoName+":"+playerTwoHealth)
+
+
+    };
+
+
+
+    /****** The program gets started below ******/
+    console.log("program starts")
+    fight();
+
+})();
