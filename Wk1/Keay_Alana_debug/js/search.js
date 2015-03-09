@@ -5,7 +5,7 @@ assignment: Week #1 ANALYZE Buggy Search v1
 */
 
 // Create privatized scope using a self-executing function
-(function() {
+(function(){
 
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
@@ -17,7 +17,7 @@ assignment: Week #1 ANALYZE Buggy Search v1
 	var validqte = function (query) {
 
 		// Trim whitespace from start and end of search query
-		while (query.charAt() = " ") {
+		while (query.charAt(1) = " ") {
 			query = query.substring(1, query.length);
 		}
 
@@ -54,7 +54,7 @@ assignment: Week #1 ANALYZE Buggy Search v1
 				// each db[i] is a single video item, each title ends with a pipe "|"
 				// save a lowercase variable of the video title
 				var dbTitleEnd = db[i].indexOf('|');
-				var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+				var dbItem = db[i].tolowercase().substring(0, dbTitleEnd);
 
 				// loop through the user's search query words
 				// save a lowercase variable of the search keyword
@@ -63,7 +63,7 @@ assignment: Week #1 ANALYZE Buggy Search v1
 
 					// is the keyword anywhere in the video title?
 					// If a match is found, push full db[i] into results array
-					var compare = dbitem.indexOf(qitem);
+					var compare = dbItem.indexOf(qitem);
 					if (compare !== -1) {
 						results.push(db[i]);
 					}
@@ -121,9 +121,9 @@ assignment: Week #1 ANALYZE Buggy Search v1
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
 	};
 
-	// The onsubmit event will be reviewed in upcoming Course Material.
+	// The onSubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
-	document.forms[0].onsubmit = function () {
+	document.forms[0].onSubmit = function () {
 		var query = searchInput.value;
 		validqte(query);
 
