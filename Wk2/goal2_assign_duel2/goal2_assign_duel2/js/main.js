@@ -4,7 +4,7 @@
 /*
 Name: Alana Keay
 Date: March 13, 2015
-Assignment: Week#1: ANALYZE Duel#1
+Assignment: Week#2: ANALYZE Duel#2
 */
 
 //self-executing function
@@ -26,10 +26,10 @@ Assignment: Week#1: ANALYZE Duel#1
 
                                                 //random formula is - Math.floor(Math.random()*(max-min)+min);
 
-            var minDamage1 = player1Damage *.5;
-            var minDamage2 = player2Damage *.5;
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);
+            var minDamage1 = player1[1] *.5;    //created var for min damage for player 1
+            var minDamage2 = player2[1] *.5;    //created var for min damage for player 2
+            var f1 = Math.floor(Math.random()*(player1[1]-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(player2[1]-minDamage2)+minDamage2);
 
             player1[2]-=f1;                    //inflict damage
             player2[2]-=f2;                    //inflict damage
@@ -60,7 +60,7 @@ Assignment: Week#1: ANALYZE Duel#1
         if(player1[2]<1 && player2[2]<1){
             result = "No winner!";
         }else if(player1[2]<1){
-            result =player2[0]+"WINS!!!"
+            result =player2[0] + "WINS!!!"
         }else if(player2[2]<1) {
             result = player1[0] + "WINS!!!"
         };
