@@ -12,20 +12,10 @@ Assignment: Week#1: ANALYZE Duel#1
 
     console.log("FIGHT!!!");                    //console.log to report the start of the fight
 
-    //player name
-    var playerOneName= "Superman";
-    var playerTwoName= "Flash";
+    var player1 = ["Superman", 20, 100];        //create array to contain information for player 1
+    var player2 = ["Flash", 20, 100];           //create array to contain information for player 2
 
-    //player damage
-    var player1Damage= 20;
-    var player2Damage= 20;
-
-    //player health
-    var playerOneHealth= 100;
-    var playerTwoHealth= 100;
-
-   //round
-    var round= 0;
+    var round= 0;                               //create var round
 
     function fight(){                           //create function to run fight
         console.log("in the fight function")    //console.log to report that the fight in the function
