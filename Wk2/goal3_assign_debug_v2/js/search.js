@@ -9,7 +9,7 @@
 
 	// Validates search query
 	var validate = function(query){                                     // #1 to many = signs (syntax)  //#3 var validate was miss spelled
-     
+
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
@@ -32,7 +32,7 @@
 	};
 
 
-
+        
 	// Finds search matches
 	var search = function(query){                                       //#4 added opening function {
 		
