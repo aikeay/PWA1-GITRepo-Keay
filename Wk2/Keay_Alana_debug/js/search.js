@@ -1,6 +1,6 @@
 // Create privatized scope using a self-executing function
 (function(){
-	
+
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
 		searchInput = document.forms[0].search,
@@ -14,9 +14,9 @@
 		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
 		};
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
-		;
+		while(query.charAt(query.length-1) === "") {
+            query = query.substring(0, query.length - 1);
+        };
 
 		// Check search length, must have 3 characters
 		if(query.length < 3){
@@ -32,18 +32,18 @@
 	};
 
 
-        
-	// Finds search matches
-	var search = function(query){                                       //#4 added opening function {
-		
-		// split the user's search query string into an array
-		var queryArray = query.join[" "];                               //#5 changed sting () into array
-		
-		// array to store matched results from database.js
-		var results = [];
 
-		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++) {
+	// Finds search matches
+	var search = function(query) {                                       //#4 added opening function {
+
+        // split the user's search query string into an array
+        var queryArray = query.join[" "];                               //#5 changed sting () into array
+
+        // array to store matched results from database.js
+        var results = [];
+
+        // loop through each index of db array
+        for (var i = 0, j = db.length; i < j; i++) {
 
             // each db[i] is a single video item, each title ends with a pipe "|"
             // save a lowercase variable of the video title
@@ -65,7 +65,8 @@
                 ;
             }
             ;
-        };
+        }
+        ;
 
     }
 		results.sort();
@@ -76,7 +77,6 @@
 		}else{
 			showMatches(results);
 		};
-	};
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
 	var noMatch = function(){
