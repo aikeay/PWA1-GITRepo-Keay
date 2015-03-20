@@ -37,7 +37,7 @@
 	var search = function(query) {                                       //#4 added opening function {
 
         // split the user's search query string into an array
-        var queryArray = query.join[" "];                               //#5 changed sting () into array
+        var queryArray = query.split(" ");                               //#5 changed join into split
 
         // array to store matched results from database.js
         var results = [];

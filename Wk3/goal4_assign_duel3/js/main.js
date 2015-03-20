@@ -27,11 +27,11 @@ Assignment: Week#3: ANALYZE Duel#3
 
             var minDamage1 = player1.damage *.5;    //created var for min damage for player 1
             var minDamage2 = player2.damage *.5;    //created var for min damage for player 2
-            var f1 = Math.floor(Math.random()*(player1.health-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(player2.health-minDamage2)+minDamage2);
+            var f1 = Math.floor(Math.random()*(player1.damage-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(player2.damage-minDamage2)+minDamage2);
 
-            player1[2]-=f1;                    //inflict damage
-            player2[2]-=f2;                    //inflict damage
+            player1.health-=f1;                    //inflict damage
+            player2.health-=f2;                    //inflict damage
 
 
                                                 //console.log the players health after each round
