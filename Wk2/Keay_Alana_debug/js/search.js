@@ -11,7 +11,7 @@
 	var validate = function(query){                                     // #1 to many = signs (syntax)  //#3 var validate was miss spelled
 
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
+		while(query.charAt(0) === " "){
 			query = query.substring(1, query.length);
 		};
 		while(query.charAt(query.length-1) === "") {
@@ -48,12 +48,12 @@
             // each db[i] is a single video item, each title ends with a pipe "|"
             // save a lowercase variable of the video title
             var dbTitleEnd = db[i].indexOf('|');
-            var dbItem = db[i].tolowercase().substring(0, dbTitleEnd);  //#7 dbiteam needs to be camel cased
+            var dbItem = db[i].toLowerCase().substring(0, dbTitleEnd);  //#7 dbiteam needs to be camel cased //to lower needs to be lowered case
 
             // loop through the user's search query words
             // save a lowercase variable of the search keyword
             for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
-                var qitem = queryArray[ii].tolowercase();              //#8 dbiteam needs to be camel cased
+                var qitem = queryArray[ii].toLowerCase();              //#8 tolowercase needs to be camel cased
 
 
                 // is the keyword anywhere in the video title?
@@ -68,7 +68,7 @@
         }
         ;
 
-    }
+    };
 		results.sort();
 		
 		// Check that matches were found, and run output functions
@@ -88,7 +88,7 @@
 	};
 	
 	// Put matches into page as paragraphs with anchors
-	var showMatches = function(results){
+	var showMatches = function(results){                                // anchors
 		
 		// THE NEXT 4 LINES ARE CORRECT.
 		var html = '<p>Results</p>', 
