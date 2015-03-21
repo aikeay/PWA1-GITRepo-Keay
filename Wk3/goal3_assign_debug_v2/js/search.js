@@ -4,7 +4,7 @@
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
 		searchInput = document.forms[0].search,
-		currentSearch = ('')                                        //add ()
+		currentSearch = ('')                                        //added ()
 	;
 	
 	// Validates search query
@@ -50,7 +50,7 @@
             // loop through the user's search query words
             // save a lowercase variable of the search keyword
             for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {
-                var qitem = queryArray[ii].tolowercase();              // changed camel casing of tolowercase
+                var qitem = queryArray[ii].toLowerCase();              // changed camel casing of tolowercase
 
                 // is the keyword anywhere in the video title?
                 // If a match is found, push full db[i] into results array
@@ -81,7 +81,9 @@
 		;
 		resultsDIV.innerHTML = html;
 	};
-	
+
+
+
 	// Put matches into page as paragraphs with anchors
 	var showMatches = function(results){
 		
@@ -90,7 +92,7 @@
 			title, 
 			url
 		;
-		
+
 		// loop through all the results search() function
 		for(var i=0, j=results.length; i<j; i++){
 		
@@ -104,10 +106,11 @@
 			
 			// make the video link - THE NEXT LINE IS CORRECT.
 			html += '<p><a href=' + url + '>' + title + '</a></p>';
+
 		};
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
 	};
-	
+
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function() {
