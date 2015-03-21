@@ -19,7 +19,7 @@ Assignment: Week#3: ANALYZE Duel#3
 
     function fight(){                           //create function to run fight
                                                 //report to the user the players health at the start of the fight
-        alert(player1.name+":"+player1.health+" *START* "+player2.name+":"+player1.health);
+        (player1.name+":"+player1.health+" *START* "+player2.name+":"+player1.health);  //REMOVED ALERT
 
            //removed loop
 
@@ -43,9 +43,9 @@ Assignment: Week#3: ANALYZE Duel#3
             if(results === "no winner"){        //if else function for fight
                 round++;                        //round numbers
                                                 //report to the user the round number and players health
-                alert(player1.name+":"+player1.health+" *ROUND "+round+" "+player2.name+":"+player2.health);
+               (player1.name+":"+player1.health+" *ROUND "+round+" "+player2.name+":"+player2.health);  //REMOVED ALERT
             }else{
-                alert(results);                 //report the results to user
+               (results);                 //report the results to user REMOVED ALERT
                 break;                          //end of function
             };
 
