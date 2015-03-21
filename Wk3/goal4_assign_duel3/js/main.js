@@ -21,9 +21,9 @@ Assignment: Week#3: ANALYZE Duel#3
                                                 //report to the user the players health at the start of the fight
         alert(player1.name+":"+player1.health+" *START* "+player2.name+":"+player1.health);
 
-        for(var i=0; i < 10; i++){              //for loop to run the fight
+           //removed loop
 
-                                                //random formula is - Math.floor(Math.random()*(max-min)+min);
+           //random formula is - Math.floor(Math.random()*(max-min)+min);
 
             var minDamage1 = player1.damage *.5;    //created var for min damage for player 1
             var minDamage2 = player2.damage *.5;    //created var for min damage for player 2
@@ -48,7 +48,7 @@ Assignment: Week#3: ANALYZE Duel#3
                 alert(results);                 //report the results to user
                 break;                          //end of function
             };
-        };
+
     };
 
     function winnerCheck(){                     //start of function to check winner
