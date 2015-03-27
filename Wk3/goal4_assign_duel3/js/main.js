@@ -17,7 +17,7 @@ Assignment: Week#3: ANALYZE Duel#3
 
     var round= 0;                               //create var round
 
-    function fight(){                           //create function to run fight
+    .click(function fight()){                           //create function to run fight
                                                 //report to the user the players health at the start of the fight
         (player1.name+":"+player1.health+" *START* "+player2.name+":"+player1.health);  //REMOVED ALERT
 
