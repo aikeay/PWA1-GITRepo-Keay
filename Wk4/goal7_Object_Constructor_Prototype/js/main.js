@@ -6,6 +6,9 @@
 // application scope (self-executing function)
 (function(){
 
+    var names = ["Malerie", "Sarah", "Joe", "John", "Cory"];                 //create array containing 5 names
+
+
 /*	
     ==================================================================
     more.Objects
