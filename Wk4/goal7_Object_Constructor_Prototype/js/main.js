@@ -8,7 +8,9 @@
 
     var names = ["Malerie", "Sarah", "Joe", "John", "Cory"];                 //create array containing 5 names
 
-
+    for (i = 0; i < 5; i++) {
+        
+    }
 /*	
     ==================================================================
     more.Objects
